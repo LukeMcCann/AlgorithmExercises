@@ -11,6 +11,7 @@
 */
 
 function bubbleSort(nums) {
+  let swapped = false;
   do {
       swapped = false;
       for (let i = 0; i < nums.length-1; i++) {
@@ -18,7 +19,6 @@ function bubbleSort(nums) {
               const temp = nums[i];
               nums[i] = nums[i+1];
               nums[i+1] = temp;
-
               swapped = true;
           }
       }
